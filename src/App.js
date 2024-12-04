@@ -10,15 +10,15 @@ import Contact from './components/Contact/Contact';
 function App() {
   return (
     <>
-    <Sidebar/>
-    <main className='main'>
-      <Home/>
-      <About/>
-      <Services/>
-      <Resume/>
-      <Portfolio/>
-      <Contact/>
-    </main>
+      <Sidebar/>
+      <main className='main'>
+        <Home/>
+        <About/>
+        <Services/>
+        <Resume/>
+        <Portfolio/>
+        <Contact/>
+      </main>
     </>
   );
 }

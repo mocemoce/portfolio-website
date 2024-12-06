@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 10;
-    background-color: rgb(244, 244, 84);
+
 }
 .STI-logo {
     width: 60px !important;
@@ -31,6 +31,10 @@
     font-size: 1.5rem;
     color: var(--title-color);
     font-weight: var(--small-font-size);
+    transition: .3s;
+}
+.nav_link:hover{
+    color:hsl(43, 100%, 68%);
 }
 .copyright{
     color:hsl(245,15%,65%);

@@ -20,23 +20,27 @@ const Sidebar = () => {
           </li>
 
           <li className="nav_item">
-            <a href="#about" className="nav_link"></a>
-            <i className="icon-user"></i>
+            <a href="#about" className="nav_link">
+              <i className="icon-user"></i>
+              </a>
           </li>
 
           <li className="nav_item">
-            <a href="#services" className="nav_link"></a>
-            <i className="icon-briefcase"></i>
+            <a href="#services" className="nav_link">
+              <i className="icon-briefcase"></i>
+              </a>
           </li>
 
           <li className="nav_item">
-            <a href="#resume" className="nav_link"></a>
-            <i className="icon-graduation"></i>
+            <a href="#resume" className="nav_link">
+              <i className="icon-graduation"></i>
+              </a>
           </li>
 
           <li className="nav_item">
-            <a href="#portfolio" className="nav_link"></a>
+            <a href="#portfolio" className="nav_link">
             <i className="icon-layers"></i>
+            </a>
           </li>
 
         </ul>
@@ -44,7 +48,7 @@ const Sidebar = () => {
     </nav>
 
     <div className="nav_footer">
-      <span className="copyright">&copy; 2024 - 2024.</span>
+      <span className="copyright">2022 - 2025 Allumni Student.</span>
     </div>
    </aside>
   )

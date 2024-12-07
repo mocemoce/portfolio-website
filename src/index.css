@@ -5,7 +5,7 @@
  :root{
     /*========== Colors ====================*/
     /*Color mode HSL(Hue, saturation, Lightness)*/
-    --first-color: hsl(353, 100%, 65%);
+    --first-color: hsl(181, 99%, 46%);
     --title-color: hsl(244, 24%, 26%);
     --text-color: hsl(244, 16%, 43%);
     --body-color: hsl(258, 60%, 98%);
@@ -119,7 +119,6 @@
 
 .section_title::before{
   content: '';
-  background: blue;                               /*change to png or gif later */
   height: 2.25rem;
   width: 2.25rem;
   position: absolute;

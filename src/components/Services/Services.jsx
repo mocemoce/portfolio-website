@@ -24,7 +24,7 @@ const data = [
     image:  Image3,
     title: "Mobile Devlopment",
     description: 
-    
+
     "I have a solid understanding of Flutter, with experience building responsive, visually appealing Android apps, integrating APIs, managing state, and optimizing performance."  },
 ]
 const Services = () => {
@@ -36,7 +36,7 @@ const Services = () => {
         {data.map(({ id, image, title, description}) => {
           return(
             <div className="services_card" key={id}>
-            <img src={image} width="150px" alt="error" className="services_img" />
+            <img src={image} width="90px" alt="error" className="services_img" />
 
             <h3 className="services_title">{title}</h3>
             <p className="services_description">{description}</p>

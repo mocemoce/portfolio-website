@@ -1,0 +1,40 @@
+.services_container{
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1.875rem;
+}
+.services_card{
+    text-align: center;
+    padding: 1.875rem;
+    border-radius: var(--border-radius);
+    background-color: var(--container-color);
+    transition: all 0.3s ease-in-out;
+}
+.services_card:hover{
+    transform: translateY(-10px);
+}
+.services_card:nth-child(1){
+    background-color: rgb(200, 233, 241);
+    box-shadow: 0px 5px 10px 0px;
+    border-radius: 5%;
+}
+.services_card:nth-child(2){
+    background-color: rgb(224, 249, 170);
+    box-shadow: 0px 5px 10px 0px;
+    border-radius: 5%;
+}
+.services_card:nth-child(3){
+    background-color: rgb(246, 179, 193);
+    box-shadow: 0px 5px 10px 0px;
+    border-radius: 5%;
+}
+.services_img{
+    margin-bottom: 1.25rem;
+}
+.services_title{
+    font-size:var(--h3-font-size);
+    margin-bottom: 1rem;
+    color:rgb(118, 20, 246);
+}
+.services_description{
+    color: var(--title-color);
+}

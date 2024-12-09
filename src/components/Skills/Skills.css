@@ -1,0 +1,54 @@
+.skills_container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px); /* 2 equal columns */
+    column-gap: 3rem; /* Spacing between columns */
+    justify-content: center;
+    width: 100%; /* Ensure it takes up full width */
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.skills_content {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+    width: 100%; /* Make content fill the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.skills_title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: 15px;
+}
+.skills_box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+    flex-wrap: wrap; /* Allow items to wrap to new lines if needed */
+}
+
+.skill_group {
+    display: flex; /* Use flexbox to align the icon and title side by side */
+    align-items: center; /* Vertically center the items */
+    gap: 1rem; /* Add space between the icon and title */
+    width: 100%; /* Ensure it takes up full width */
+    max-width: 300px; /* Limit the max width of each skill group */
+}
+
+.icon-badge {
+    font-size: 2rem; /* Adjust the icon size */
+    color: var(--title-color);
+}
+
+.skills_name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+.skills_level {
+    font-size: 0.875rem; /* Smaller text for skill level */
+    color: var(--text-light-color);
+}

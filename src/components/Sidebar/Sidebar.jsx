@@ -38,11 +38,22 @@ const Sidebar = () => {
           </li>
 
           <li className="nav_item">
+            <a href="#skill" className="nav_link">
+            <i className="icon-grid"></i>
+            </a>
+          </li>
+
+          <li className="nav_item">
             <a href="#portfolio" className="nav_link">
             <i className="icon-layers"></i>
             </a>
           </li>
 
+          <li className="nav_item">
+            <a href="#contact" className="nav_link">
+            <i className="icon-bubble"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

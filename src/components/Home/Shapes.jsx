@@ -13,7 +13,6 @@ function Shapes() {
             <div className="1"></div>
             <div className="1"></div>
             <div className="1"></div>
-            <div className="1"></div>
         </div>
     </div>
   )

@@ -9,6 +9,7 @@
     border-radius: calc(var(--border-radius) * 0.8); /* Adjusted dynamically */
     position: relative;
     box-shadow: calc(var(--shadow) * 0.8); /* Adjusted dynamically */
+    border-radius: 5%;
 }
 
 .timeline_item {
@@ -34,7 +35,7 @@
 .timeline .icon-briefcase,
 .timeline .icon-graduation {
     position: absolute;
-    left: -0.35rem; /* Reduced from -0.4375rem */
+    left: -0.65rem; /* Reduced from -0.4375rem */
     top: 38px; /* Reduced from 100px */
     font-size: calc(var(--h2-font-size) * 0.8); /* Adjusted dynamically */
     background-color: var(--container-color);
@@ -51,3 +52,4 @@
     font-size: calc(var(--h3-font-size) * 0.8); /* Adjusted dynamically */
     margin: 0.4rem; /* Reduced from 0.5rem */
 }
+

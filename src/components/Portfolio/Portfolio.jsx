@@ -6,7 +6,7 @@ import image3 from '../../assets/coming-soon.png';
 
 const Portfolio = () => {
   return (
-    <section className="pricing container section">
+    <section className="pricing container section" id="pricing">
       <h2 className="section_title">Featured Projects</h2>
 
       <div className="p_container grid">

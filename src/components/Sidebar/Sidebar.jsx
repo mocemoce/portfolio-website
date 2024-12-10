@@ -44,7 +44,7 @@ const Sidebar = () => {
           </li>
 
           <li className="nav_item">
-            <a href="#portfolio" className="nav_link">
+            <a href="#pricing" className="nav_link">
             <i className="icon-layers"></i>
             </a>
           </li>

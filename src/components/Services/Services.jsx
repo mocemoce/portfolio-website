@@ -11,7 +11,7 @@ const data = [
     title: "UI/UX Design",
     description: 
 
-    "Proficient in Figma and Adobe Photoshop for UI/UX design, specializing in creating wireframes, prototypes, and high-fidelity visuals to ensure user-friendly and effective designs."  },
+  "I have a basic understanding of Figma and Adobe Photoshop for UI/UX design. I can create simple wireframes, prototypes, and clean visuals to help make designs easy to use and look good."   },
   {
     id: 2,
     image:  Image2,

@@ -70,6 +70,9 @@
 .home_scroll-name {
   font-size: var(--small-font-size);
 }
+.btn:hover {
+  background-color: var(--primary-color-hover);
+}                                                                             
 
 .mouse {
   border: 2px solid #454360;

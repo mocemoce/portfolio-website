@@ -68,3 +68,61 @@
 .btn:hover {
     background-color: var(--primary-color-hover);
 }
+
+@media (max-width: 768px) {
+    .about_container {
+        grid-template-columns: 1fr;
+    }
+
+    .about_data {
+        grid-template-columns: 1fr;
+        padding: 1.25rem;
+    }
+
+    .about_data::before {
+        left: -0.5rem;
+    }
+
+    .skills_titles {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills_name {
+        font-size: var(--small-font-size);
+    }
+
+    .frontend, .backend, .ui {
+        height: 6px;
+    }
+
+    .btn {
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about_container {
+        grid-template-columns: 1fr;
+    }
+
+    .about_data {
+        padding: 1rem;
+    }
+
+    .skills_titles {
+        flex-direction: column;
+    }
+
+    .frontend, .backend, .ui {
+        height: 5px;
+    }
+
+    .skills_name {
+        font-size: var(--x-small-font-size);
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+}

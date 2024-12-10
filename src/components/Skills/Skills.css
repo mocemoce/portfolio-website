@@ -1,3 +1,4 @@
+/* Default styling for larger screens */
 .skills_container {
     display: grid;
     grid-template-columns: repeat(2, 350px); /* 2 equal columns */
@@ -22,6 +23,7 @@
     text-align: center;
     margin-bottom: 15px;
 }
+
 .skills_box {
     display: flex;
     justify-content: center;
@@ -53,3 +55,73 @@
     color: var(--text-light-color);
 }
 
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .skills_container {
+        grid-template-columns: 1fr; /* Single column layout */
+        column-gap: 2rem; /* Adjust the column gap */
+    }
+
+    .skills_content {
+        padding: 1.5rem 2rem; /* Reduce padding */
+    }
+
+    .skills_title {
+        font-size: 1.5rem; /* Adjust title size for smaller screens */
+    }
+
+    .skills_box {
+        column-gap: 1.5rem; /* Reduce the gap between icons */
+    }
+
+    .skill_group {
+        max-width: 250px; /* Reduce max-width of each skill group */
+    }
+
+    .icon-badge {
+        font-size: 1.5rem; /* Adjust icon size for smaller screens */
+    }
+
+    .skills_name {
+        font-size: 1rem; /* Adjust skill name size */
+    }
+
+    .skills_level {
+        font-size: 0.75rem; /* Adjust skill level font size */
+    }
+}
+
+/* Media Query for very small screens (e.g., mobile) */
+@media (max-width: 480px) {
+    .skills_container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .skills_content {
+        padding: 1rem 1.5rem; /* Further reduce padding */
+    }
+
+    .skills_title {
+        font-size: 1.25rem; /* Adjust title size for very small screens */
+    }
+
+    .skills_box {
+        column-gap: 1rem; /* Further reduce the gap between icons */
+    }
+
+    .skill_group {
+        max-width: 200px; /* Further reduce max-width of each skill group */
+    }
+
+    .icon-badge {
+        font-size: 1.25rem; /* Adjust icon size further */
+    }
+
+    .skills_name {
+        font-size: 0.875rem; /* Adjust skill name size */
+    }
+
+    .skills_level {
+        font-size: 0.7rem; /* Adjust skill level font size */
+    }
+}

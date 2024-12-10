@@ -1,0 +1,105 @@
+.contact.section {
+    padding-bottom: 6.25rem;
+  }
+  
+  /* Contact Container */
+  .contact_container {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    column-gap: 1.875rem;
+    align-items: start; /* Align content at the top */
+  }
+  
+  /* Contact Title */
+  .contact_title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+  
+  /* Form Group Styling */
+  .contact_form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+  
+  .contact_form-div {
+    position: relative;
+    margin-bottom: 1.875rem;
+    height: 3.75rem;
+  }
+  
+  /* Input Field and Textarea Styling */
+  .contact_from-input,
+  .contact_form-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--shadow);
+    background-color: var(--container-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    border-radius: 5%;
+    padding: 0.625rem 1.875rem;
+    font-size: var(--body-font-size);
+    z-index: 1;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  
+  /* Focus Effect for Inputs */
+  .contact_from-input:focus,
+  .contact_form-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+  }
+  
+  /* Button Styling */
+  .btn {
+    background-color: var(--first-color);
+    color: var(--text-light);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: var(--h3-font-size);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--primary-color-hover);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Contact container on mobile */
+    .contact_container {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Adjusting input and textarea for smaller screens */
+    .contact_from-input,
+    .contact_form-input {
+      padding: 0.625rem;
+      font-size: var(--small-font-size);
+    }
+  
+    /* Button font size adjustment */
+    .btn {
+      font-size: var(--small-font-size);
+      padding: 0.75rem 1.5rem;
+    }
+  
+    /* Contact form group stacking on mobile */
+    .contact_form-group {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact_form-div {
+      margin-bottom: 1.5rem;
+    }
+  }
+  

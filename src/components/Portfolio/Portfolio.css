@@ -16,8 +16,8 @@
 }
 .badge {
     position: absolute;
-    top: -5px; /* Adjust position to align visually */
-    left: 20%;
+    top: 10px; /* Adjust position to align visually */
+    left: 19%;
     transform: translateX(-60%) rotate(-30deg); /* Center horizontally and slightly rotate */
     background-color: var(--first-color); /* Distinct background color */
     color: var(--title-color); /* White text for contrast */
@@ -57,7 +57,7 @@
 .p_title,
 .p_support {
     margin-bottom: 0.75rem;
-    color: var( --text-color);
+    color: var(--text-color);
 }
 
 .p_item .btn {
@@ -79,17 +79,59 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Media Query for screens smaller than 768px (Tablets and below) */
 @media (max-width: 768px) {
+    .p_container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid to fit smaller screens */
+        gap: 1rem; /* Reduce the gap between items */
+    }
+
     .p_item {
-        padding: 1.5rem;
+        padding: 1.5rem; /* Reduce padding for smaller screens */
     }
 
     .p_plan {
-        font-size: var(--h3-font-size);
+        font-size: var(--h3-font-size); /* Adjust font size */
     }
 
     .badge {
         font-size: var(--small-font-size);
-        top: 0.75rem;
+        top: 0.75rem; /* Adjust position */
+        left: 15%; /* Adjust position to fit smaller screens */
+    }
+
+    .p_img {
+        max-width: 80px; /* Reduce image size */
+    }
+}
+
+/* Media Query for screens smaller than 480px (Mobile devices) */
+@media (max-width: 480px) {
+    .p_container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 0.75rem; /* Further reduce gap */
+    }
+
+    .p_item {
+        padding: 1rem; /* Further reduce padding */
+    }
+
+    .p_plan {
+        font-size: var(--h4-font-size); /* Reduce font size for small screens */
+    }
+
+    .badge {
+        font-size: var(--small-font-size);
+        top: 0.5rem; /* Adjust badge position */
+        left: 10%; /* Adjust position for smaller screens */
+    }
+
+    .p_img {
+        max-width: 70px; /* Further reduce image size */
+    }
+
+    .p_title,
+    .p_support {
+        font-size: var(--small-font-size); /* Reduce title and support font size */
     }
 }

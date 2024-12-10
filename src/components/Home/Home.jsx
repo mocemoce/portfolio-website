@@ -4,7 +4,6 @@ import me from "../../assets/avatar.jpg";
 import HeaderSocials from './HeaderSocials';
 import ScrollDown from './ScrollDown';
 import Shapes from './Shapes';
-import Resume from "../../assets/resume.pdf"
 
 const Home = () => {
   return (
@@ -17,11 +16,7 @@ const Home = () => {
       <HeaderSocials/>
 
       <div className="hire-me-btn-container btn">
-      <a 
-        href={Resume} 
-        download="Your_resume.pdf" 
-        className="hire-me-btn"
-      >
+      <a>
         Hire Me
       </a>
     </div>

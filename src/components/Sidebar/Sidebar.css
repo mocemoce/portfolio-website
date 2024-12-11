@@ -1,5 +1,6 @@
-.aside{
-    position:fixed;
+/* Default (Desktop) styles */
+.aside {
+    position: fixed;
     left: 0;
     top: 0;
     background: var(--body-color);
@@ -11,34 +12,138 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 10;
-
+    overflow-y: auto; /* Allow scrolling within the sidebar if content overflows */
 }
+
 .STI-logo {
     width: 60px !important;
-    max-width: none;       
-    height: auto;          
-    object-fit: contain;   
-    position: relative;    
-    right: 20px !important; 
+    max-width: none;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    top: 0; /* Ensure logo starts at the top */
+    left: -20px;
+    margin-bottom: 1rem; /* Add space below the logo */
 }
 
-.nav_list{
+.nav_list {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
-.nav_link{
+
+.nav_link {
     font-size: 1.5rem;
     color: var(--title-color);
     font-weight: var(--small-font-size);
-    transition: .3s;
+    transition: 0.3s;
 }
-.nav_link:hover{
-    color:hsl(43, 100%, 68%);
+
+.nav_link:hover {
+    color: hsl(43, 100%, 68%);
 }
-.copyright{
-    color:hsl(245,15%,65%);
+
+.copyright {
+    color: hsl(245, 15%, 65%);
     font-size: var(--small-font-size);
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
+}
+
+/* Tablet styles (up to 1024px) */
+@media (max-width: 1024px) {
+    .aside {
+        width: 80px;
+        padding: 2rem;
+    }
+
+    .STI-logo {
+        width: 50px !important;
+        top: 50px;
+    }
+
+    .nav_link {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile styles (up to 768px) */
+@media (max-width: 768px) {
+    .aside {
+        width: 80px; /* Sidebar stays narrow but visible */
+        padding: 1rem;
+        min-height: 100vh; /* Sidebar spans the full height */
+        flex-direction: column; /* Retain vertical structure */
+        justify-content: space-between;
+        border-right: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: none;
+        overflow-y: auto; /* Allow scrolling within the sidebar */
+    }
+
+    .STI-logo {
+        width: 40px !important;
+        position: relative;
+        top: 0; /* Ensure logo is at the top */
+        margin-bottom: 1rem; /* Add space below the logo */
+    }
+
+    .nav_list {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .nav_link {
+        font-size: 1rem;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+    .aside {
+        width: 70px; /* Further reduce the width */
+        padding: 0.5rem;
+    }
+
+    .STI-logo {
+        width: 30px !important;
+        position: relative;
+        top: 110px; /* Ensure logo is at the top */
+        margin-bottom: 1rem; /* Add space below the logo */
+        left: -10px;
+    }
+
+    .nav_link {
+        font-size: 0.9rem;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+}
+
+/* Specific styles for 375x667 (smaller than typical mobile, e.g. iPhone SE) */
+@media (max-width: 375px) {
+    .aside {
+        width: 65px; /* Further reduce the width for small screens */
+        padding: 0.4rem;
+    }
+
+    .STI-logo {
+        width: 50px; /* Adjust to desired width */
+        height: 50px; /* Explicitly set height */
+        position: relative;
+        top: 0; /* Ensure logo stays at the top */
+    }
+
+    .nav_link {
+        font-size: 0.8rem; /* Further reduce text size */
+    }
+
+    .copyright {
+        font-size: 0.6rem; /* Smaller font for copyright */
+    }
 }

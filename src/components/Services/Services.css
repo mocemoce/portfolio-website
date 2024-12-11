@@ -64,9 +64,11 @@
         grid-template-columns: 1fr; /* Change to single column */
         column-gap: 1rem; /* Further reduce column gap */
     }
+    
 
     .services_card {
         padding: 1.25rem; /* Reduce padding even further */
+        
     }
 
     .services_title {

@@ -86,6 +86,13 @@
         gap: 1rem; /* Reduce the gap between items */
     }
 
+    .badge {
+        font-size: 1.5rem; /* Adjust the font size to be more responsive */
+        width: 140px; /* Let the width adjust based on content */
+        text-align: center; /* Center the text */
+        z-index: 0;
+    }
+
     .p_item {
         padding: 1.5rem; /* Reduce padding for smaller screens */
     }

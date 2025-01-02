@@ -1,7 +1,7 @@
 import React from 'react';
 import "./About.css";
 import me from "../../assets/profile.png";
-import Resume from "../../assets/resume.pdf"
+import Resume from "../../assets/NunezResume.pdf"
 
 const About = () => {
   return (
@@ -14,7 +14,7 @@ const About = () => {
         <div className="about_data grid">
           <div className="about_info">
             <p className="about_description">
-            I am Moce Loise B. Nunez, a recent graduate from STI Colleges. I have a solid understanding of front-end development, particularly in frameworks like React.js and Angular. I am passionate about learning new technologies and continuously improving my skills.
+            I am Moce Loise B. Nunez, a recent graduate from STI Colleges. I have a solid understanding of front-end development, particularly in frameworks like React.js. I am passionate about learning new technologies and continuously improving my skills.
             </p>
             <a href={Resume} className="btn" download="Moce_Loise_B_Nunez_Resume.pdf">Download CV</a>
           </div>
